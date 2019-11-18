@@ -41,4 +41,19 @@ public class FileControllerTest {
                 .andExpect(status().isOk());
     }
 
+    @Test
+    public void test(){
+        int count = 0;
+        for (int i = 0; i <10 ; i++) {
+            count++;
+        }
+        System.out.println(count);
+    }
+
+    @Test
+    public void test2(){
+        int i = 0;
+        System.out.println(i++);
+    }
+
 }
