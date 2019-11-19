@@ -6,12 +6,22 @@ package org.zhangbiao.security.core.properties;
  */
 public class BrowserProperties {
 
+    private SessionProperties session = new SessionProperties();
+
     private String loginPage = "/zhangbiao-signIn.html";
 
     private LoginResponseType loginType = LoginResponseType.JSON;
 
     private Integer rememberMeSeconds = 3600;
 
+
+    public SessionProperties getSession() {
+        return session;
+    }
+
+    public void setSession(SessionProperties session) {
+        this.session = session;
+    }
 
     public Integer getRememberMeSeconds() {
         return rememberMeSeconds;
